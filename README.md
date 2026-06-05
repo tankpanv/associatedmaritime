@@ -100,6 +100,72 @@ export const SITE_IMAGES = {
 
 ### Production / deploy
 
+#### 纯服务器部署 + 开机自启（推荐给非 Docker 环境）
+
+如果你就是要直接在 Linux 服务器上部署，不走 Docker，仓库里现在已经有一键脚本：
+
+```bash
+git clone <your-repo-url>
+cd associatedmaritime
+bash scripts/deploy-server.sh install
+```
+
+这条命令会自动完成：
+
+- 安装 Node.js 22（Ubuntu / Debian）
+- 生成 `.env.server`
+- 自动生成随机 `ADMIN_PASS` 和 `ADMIN_SECRET`
+- 执行 `npm ci`
+- 执行 `npm run build`
+- 注册 `systemd` 服务
+- 设置开机自启
+- 启动前后端并做健康检查
+
+服务名：
+
+- `associatedmaritime-backend.service`
+- `associatedmaritime-frontend.service`
+
+常用命令：
+
+```bash
+bash scripts/deploy-server.sh status
+bash scripts/deploy-server.sh logs
+bash scripts/deploy-server.sh restart
+bash scripts/deploy-server.sh rebuild
+bash scripts/deploy-server.sh stop
+```
+
+如果你想直接用 `systemctl`：
+
+```bash
+sudo systemctl status associatedmaritime-backend
+sudo systemctl status associatedmaritime-frontend
+sudo systemctl restart associatedmaritime-backend associatedmaritime-frontend
+sudo journalctl -u associatedmaritime-backend -u associatedmaritime-frontend -f
+```
+
+服务器环境变量文件是：
+
+```bash
+.env.server
+```
+
+模板在：
+
+```bash
+.env.server.example
+```
+
+最重要的是这些配置项：
+
+- `FRONTEND_PORT`: 网站端口，默认 `3037`
+- `BACKEND_PORT`: 后端和 `/admin` 端口，默认 `8047`
+- `BACKEND_URL`: 前端构建时代理到后端的地址，默认 `http://127.0.0.1:8047`
+- `ADMIN_USER` / `ADMIN_PASS`: 管理后台账号密码
+- `ADMIN_SECRET`: 管理后台 session 签名密钥
+- `SMTP_*` / `MAIL_*`: 邮件通知配置，不填则只写入 `data/outbox/`
+
 #### 一键生产部署（推荐）
 
 新服务器上推荐直接用 Docker 部署，这样不需要先装 Node、npm 或任何项目依赖。
