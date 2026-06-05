@@ -1,0 +1,31 @@
+services:
+  backend:
+    env_file:
+      - .env.production
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    environment:
+      BACKEND_PORT: "${BACKEND_PORT:-8047}"
+    volumes:
+      - ./data:/app/data
+    ports:
+      - "${BACKEND_PORT:-8047}:${BACKEND_PORT:-8047}"
+    restart: unless-stopped
+
+  frontend:
+    env_file:
+      - .env.production
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+      args:
+        BACKEND_URL: "http://backend:${BACKEND_PORT:-8047}"
+    environment:
+      PORT: "${FRONTEND_PORT:-3037}"
+      BACKEND_URL: "http://backend:${BACKEND_PORT:-8047}"
+    ports:
+      - "${FRONTEND_PORT:-3037}:${FRONTEND_PORT:-3037}"
+    depends_on:
+      - backend
+    restart: unless-stopped

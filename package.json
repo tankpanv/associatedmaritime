@@ -1,0 +1,23 @@
+{
+  "name": "associatedmaritime-replica",
+  "version": "1.0.0",
+  "private": true,
+  "description": "1:1 replica of associatedmaritime.com (static frontend mirror + inferred backend)",
+  "scripts": {
+    "dev": "bash scripts/serve.sh dev",
+    "start": "bash scripts/serve.sh start",
+    "stop": "bash scripts/serve.sh stop",
+    "restart": "bash scripts/serve.sh restart",
+    "status": "bash scripts/serve.sh status",
+    "logs": "bash scripts/serve.sh logs",
+    "backend": "node server/backend.cjs",
+    "build": "next build",
+    "prod": "bash scripts/serve.sh prod"
+  },
+  "dependencies": {
+    "next": "15.3.5",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "busboy": "^1.6.0"
+  }
+}

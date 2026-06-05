@@ -1,0 +1,22 @@
+# TOP MARINE GROUP — Next.js frontend (standalone) ───────────────────────────
+FROM node:22-alpine AS build
+WORKDIR /app
+COPY package.json package-lock.json* ./
+RUN npm install --no-audit --no-fund
+COPY . .
+# The frontend proxies the API to the backend; bake its URL at build time.
+ARG BACKEND_URL=http://backend:8047
+ENV BACKEND_URL=$BACKEND_URL
+RUN npm run build
+
+FROM node:22-alpine AS run
+WORKDIR /app
+ENV NODE_ENV=production
+ENV PORT=3037
+ENV HOSTNAME=0.0.0.0
+# standalone server + the assets it needs (Next does not bundle these in)
+COPY --from=build /app/.next/standalone ./
+COPY --from=build /app/.next/static ./.next/static
+COPY --from=build /app/public ./public
+EXPOSE 3037
+CMD ["node", "server.js"]

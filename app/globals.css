@@ -1,0 +1,165 @@
+/* Helpers for the React rebuild. The heavy lifting is still the original site
+   CSS (vuebaca / layout / styles), loaded via <link> in the layout. */
+
+/* Home hero split into two images (containership + oil tanker), thin white
+   divider between them. */
+.hero-split { position: absolute; inset: 0; display: flex; gap: 0; background: #fff; }
+.hero-split > div { flex: 1 1 50%; background-size: cover; background-position: center 46%; }
+
+.home-content {
+  margin-top: 0;
+}
+
+.home-content > .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.home-content .ratio-home-hero {
+  height: calc(100vh - 100px);
+  min-height: 520px;
+  max-height: 820px;
+}
+
+.home-content .ratio-home-hero::before {
+  display: none;
+}
+
+.home-services-row {
+  display: none;
+}
+
+/* Home keeps the source site's composition: text on a white fade, image visible
+   immediately. Mobile uses a top fade; desktop uses the original left-to-right
+   fade so the top of the image is not washed out. */
+.grad-overlay.home-grad {
+  display: none !important;
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-content {
+    margin-top: 0;
+  }
+
+  .grad-overlay.home-grad {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 1369px) {
+  .home-content {
+    margin-top: -80px;
+  }
+
+  .home-content .ratio-home-hero {
+    height: calc(100vh - 100px);
+  }
+}
+
+/* Replacement for the original (dead) <bg-image> async component. */
+.bg-fill {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Working mobile drawer (original <site-drawer> was a dead async component). */
+.mobile-drawer {
+  position: fixed; inset: 0; z-index: 1000; background: #0c336d;
+  transform: translateX(100%); transition: transform 0.35s ease;
+  display: flex; align-items: center; justify-content: center;
+}
+.mobile-drawer.open { transform: translateX(0); }
+.mobile-drawer .mobile-menu { list-style: none; padding: 0; margin: 0; text-align: center; }
+.mobile-drawer .mobile-menu a { color: #fff; font-size: 1.6rem; letter-spacing: 0.1rem; display: block; padding: 14px 0; text-decoration: none; }
+.mobile-drawer .mobile-menu a.active { opacity: 0.55; }
+
+/* Solid header background once scrolled (the original fades a :before in). */
+.header.page-scrolled { background: #fff; box-shadow: 0 2px 14px rgba(0,0,0,0.06); }
+
+/* The header's decorative overlay (::before background + ::after divider) is an
+   absolutely-positioned box covering the whole header. It must not capture
+   clicks, or the non-positioned language <select> beneath it never opens. */
+.header::before, .header::after { pointer-events: none; }
+
+/* Fleet hero: the long intro lines ran across the image (over the lighthouse)
+   and were unreadable. Put a full-width white band behind the text's vertical
+   band, and cap the line width so the sentence wraps. */
+.grad-overlay.fleet-grad {
+  background: linear-gradient(180deg, hsla(0,0%,100%,0) 18%, #fff 35%, #fff 66%, hsla(0,0%,100%,0) 85%) !important;
+}
+.home-hero-text .fleet-text { max-width: 760px; margin-left: auto; margin-right: auto; }
+
+/* Language picker (dropdown select). Soft hover — keeps navy text (no white). */
+.lang-select {
+  -webkit-appearance: none; appearance: none;
+  background-color: #fff; color: #0c336d; border: 1px solid #0c336d;
+  border-radius: 16px; padding: 6px 28px 6px 12px; font-size: 0.9rem; line-height: 1.1;
+  letter-spacing: 0.02rem; cursor: pointer; transition: background-color .2s ease;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path d='M2.5 4.5l3.5 3.5 3.5-3.5' fill='none' stroke='%230c336d' stroke-width='1.5' stroke-linecap='round'/></svg>");
+  background-repeat: no-repeat; background-position: right 9px center;
+}
+.lang-select:hover { background-color: #eef2f8; }
+.lang-select:focus { outline: none; }
+.lang-select option { color: #0c336d; background: #fff; }
+.lang-select-dark {
+  color: #fff; border-color: rgba(255,255,255,.7); background-color: transparent;
+  margin-top: 18px; font-size: 1.05rem;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path d='M2.5 4.5l3.5 3.5 3.5-3.5' fill='none' stroke='white' stroke-width='1.5' stroke-linecap='round'/></svg>");
+}
+.lang-select-dark:hover { background-color: rgba(255,255,255,.12); }
+.lang-select-dark option { color: #0c336d; }
+
+/* Stable header across languages: fixed-width nav slots so switching EN/中文
+   only swaps the centered text, the menu never changes width or repositions. */
+.header .main-menu > li { width: 108px; margin-left: 4px; display: flex; justify-content: center; align-items: center; }
+.header .main-menu > li:first-child { margin-left: 0; }
+.header .main-menu > li > a { padding-left: 8px; padding-right: 8px; white-space: nowrap; font-size: 1rem; letter-spacing: 0.03rem; }
+.header .main-menu > li.lang-item { width: 100px; margin-left: 16px; }
+.header .main-menu > li.lang-item .lang-select { width: 100%; }
+
+/* Contact page brand image. */
+.contact-left-panel {
+  flex: 0 0 auto;
+}
+.contact-main-logo {
+  display: block;
+  width: min(420px, 80vw);
+  height: auto;
+}
+
+/* ── Scroll reveal ──────────────────────────────────────────────────────────
+   The original (GSAP) hides content below the fold and animates it in on scroll
+   with expo easing + word/element stagger. The original site CSS already gives
+   the "before" states: .reveal>* opacity:0 · .mask-bottom span translated+hidden
+   (with .mask-bottom{overflow:hidden} clipping for the wipe) · .page-title i
+   width:0 · .home-services>li opacity:0 · .service-title h2 / .service-desc>*
+   opacity:0. app/components/Reveal.jsx drives the motion via the Web Animations
+   API — a GSAP-like result without GSAP. Only the section photo needs a hidden
+   "before" state added here. */
+.rx-anim .service-image { opacity: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  /* show everything immediately, no motion */
+  .reveal > *, .reveal-left > *, .reveal-right > *,
+  .mask-bottom span, .mask-top span,
+  .home-services > li,
+  .services .service-text .service-title h2,
+  .services .service-text .service-title p,
+  .services .service-text .service-desc > * { opacity: 1 !important; transform: none !important; }
+  .page-title i { width: 45px !important; }
+  .rx-anim .service-image { opacity: 1; }
+}
+
+/* Generic modal used for the cookies settings + resume privacy notice. */
+.rx-modal-backdrop {
+  position: fixed; inset: 0; z-index: 1100;
+  background: rgba(0,0,0,0.5);
+  display: flex; align-items: center; justify-content: center; padding: 20px;
+}
+.rx-modal { background: #fff; max-width: 760px; width: 100%; max-height: 86vh; overflow: auto; position: relative; }
+.rx-modal .btn-modal-close { position: absolute; top: 14px; right: 14px; background: none; border: 0; cursor: pointer; }

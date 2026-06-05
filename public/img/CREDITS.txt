@@ -1,0 +1,46 @@
+Image credits — sourced from Wikimedia Commons (freely licensed).
+Replaces the original site's imagery. Each line: file <- source (author, license).
+
+hero-home.jpg  <-  File:Tanker Ocean Lady being escorted by voith tractor tugs into Sullom Voe Oil Terminal - geograph.org.uk - 2160495.jpg  | john bateson | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Tanker_Ocean_Lady_being_escorted_by_voith_tractor_tugs_into_Sullom_Voe_Oil_Terminal_-_geograph.org.uk_-_2160495.jpg
+hero-fleet.jpg  <-  File:Container ship Helga nearing Greenock Ocean Terminal.jpg  | dave souza | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Container_ship_Helga_nearing_Greenock_Ocean_Terminal.jpg
+about-1.jpg  <-  File:Oil tanker off of the Yemen coast (oil-tanker-yemen-coast).jpg  | European Union , Copernicus Sentinel-2  imagery | Attribution | https://commons.wikimedia.org/wiki/File:Oil_tanker_off_of_the_Yemen_coast_(oil-tanker-yemen-coast).jpg
+about-2.jpg  <-  File:Aerial view of an oil tanker discharging at the digue de Querqueville.jpg  | United States Army Signal Corps | Public domain | https://commons.wikimedia.org/wiki/File:Aerial_view_of_an_oil_tanker_discharging_at_the_digue_de_Querqueville.jpg
+ship-management.jpg  <-  File:Hellespont Alhambra-223713 v2.jpg  | PA2 Dan Tremper, USCG. Cropped by User:Ultra7 | Public domain | https://commons.wikimedia.org/wiki/File:Hellespont_Alhambra-223713_v2.jpg
+technical.jpg  <-  File:BBC Machinery for a Ship Engine (4215747172).jpg  | alex.ch from Zurich, Switzerland | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:BBC_Machinery_for_a_Ship_Engine_(4215747172).jpg
+crewing.jpg  <-  File:The crew of the MV Faina stand on the deck.jpg  | U.S. Navy photo by Mass communication Specialist 2nd Class J | Public domain | https://commons.wikimedia.org/wiki/File:The_crew_of_the_MV_Faina_stand_on_the_deck.jpg
+operation.jpg  <-  File:Bridge of Cargo Ship in Port Everglades.jpg  | Yanjipy | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Bridge_of_Cargo_Ship_in_Port_Everglades.jpg
+chartering.jpg  <-  File:General cargo ship 'Seven Sky' in the port of Haifa, Israel - 2023-03-11.jpg (DSC1194).jpg  | DmitTrix | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:General_cargo_ship_%27Seven_Sky%27_in_the_port_of_Haifa,_Israel_-_2023-03-11.jpg_(DSC1194).jpg
+procurement.jpg  <-  File:Container-Terminal Bremerhaven 02.jpg  | H. Zell | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Container-Terminal_Bremerhaven_02.jpg
+hsqe.jpg  <-  File:Vevey-P2110127.JPG  | Rama | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Vevey-P2110127.JPG
+sale-purchase.jpg  <-  File:Cargo ship "Fri Ocean", Medina Wharf, Cowes, Isle of Wight, England.jpg  | ITookSomePhotos | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Cargo_ship_%22Fri_Ocean%22,_Medina_Wharf,_Cowes,_Isle_of_Wight,_England.jpg
+financial.jpg  <-  File:Business professional engages in note-taking during a meeting at a modern office desk.jpg  | Shixart1985 | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Business_professional_engages_in_note-taking_during_a_meeting_at_a_modern_office_desk.jpg
+insurance.jpg  <-  File:Tugboats taking tanker STI Yorkville into Fremantle Outer Harbour, August 2019.jpg  | Calistemon | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Tugboats_taking_tanker_STI_Yorkville_into_Fremantle_Outer_Harbour,_August_2019.jpg
+newbuilding.jpg  <-  File:Thompson Graving Dock H&W shipyard.jpg  | Martinvl | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Thompson_Graving_Dock_H%26W_shipyard.jpg
+fsofpso.jpg  <-  File:BOXING UP.JPG  | Torqtech Offshore Sercvices | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:BOXING_UP.JPG
+
+--- replaced 2026-06-04 (name-free) ---
+ship-management.jpg  <-  File:Houston Ship Channel Barbours Cut.jpg  | U.S. Army Corps of Engineers, photographer not spe | Public domain | https://commons.wikimedia.org/wiki/File:Houston_Ship_Channel_Barbours_Cut.jpg
+hero-home.jpg  <-  File:Ocean Container Ship in Sarangani Bay (24805799856).jpg  | Gary Todd from Xinzheng, China | CC0 | https://commons.wikimedia.org/wiki/File:Ocean_Container_Ship_in_Sarangani_Bay_(24805799856).jpg
+hero-careers.jpg  <-  File:US Navy 090722-N-1255R-006 A working party of the Blue crew of the guided-missile submarine USS Georgia (SSGN 729) take on food and supplies during a brief port visit in Port Canaveral, Fla.jpg  | U.S. Navy photo by Lt. Rebecca Rebarich | Public domain | https://commons.wikimedia.org/wiki/File:US_Navy_090722-N-1255R-006_A_working_party_of_the_Blue_crew_of_the_guided-missile_submarine_USS_Georgia_(SSGN_729)_take_on_food_and_supplies_during_a_brief_port_visit_in_Port_Canaveral,_Fla.jpg
+crewing.jpg  <-  File:US Navy 081031-N-4774B-054 Flight deck crew members move an AV-8B Harrier II jet.jpg  | U.S. Navy photo by Mass Communication Specialist 3 | Public domain | https://commons.wikimedia.org/wiki/File:US_Navy_081031-N-4774B-054_Flight_deck_crew_members_move_an_AV-8B_Harrier_II_jet.jpg
+operation.jpg  <-  File:Michelle Wie visits the bridge of the USS Honolulu.jpg  | U.S. Navy photo by Chief Journalist David Rush. | Public domain | https://commons.wikimedia.org/wiki/File:Michelle_Wie_visits_the_bridge_of_the_USS_Honolulu.jpg
+sale-purchase.jpg  <-  File:Aerial photograph of a cargo ship.jpg  | Wilfredor | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_a_cargo_ship.jpg
+insurance.jpg  <-  File:Aerial view of the port of Horta, 2015.jpg  | Photographer: Mosbatho | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_port_of_Horta,_2015.jpg
+about-1.jpg  <-  File:Aerial image of the Bremerhaven container terminal (view from the southeast).jpg  | Carsten Steger | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Aerial_image_of_the_Bremerhaven_container_terminal_(view_from_the_southeast).jpg
+chartering.jpg  <-  File:Container-Terminal Bremerhaven 02.jpg  | H. Zell | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Container-Terminal_Bremerhaven_02.jpg
+about-2.jpg  <-  File:Aerial photograph of the Port of Miami Container Port.jpg  | James R. Tourtellotte | Public domain | https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_the_Port_of_Miami_Container_Port.jpg
+
+--- replaced 2026-06-04 (no frontal faces) ---
+operation.jpg  <-  File:Bergama ferry wheelhouse-4.jpg  | Koray | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Bergama_ferry_wheelhouse-4.jpg
+financial.jpg  <-  File:Hands-woman-apple-desk.jpg  | Ed Gregory | CC0 | https://commons.wikimedia.org/wiki/File:Hands-woman-apple-desk.jpg
+crewing.jpg  <-  File:USS Gunston Hall Conducts Well Deck Operations with Italian Navy in Support of Steadfast Defender 24 (8243039).jpg  | U.S. Navy photo by Petty Officer 1st Class Danie | Public domain | https://commons.wikimedia.org/wiki/File:USS_Gunston_Hall_Conducts_Well_Deck_Operations_with_Italian_Navy_in_Support_of_Steadfast_Defender_24_(8243039).jpg
+hero-careers.jpg  <-  File:US Navy 080818-N-4515N-001 An air crew member stands on the flight deck of the amphibious assault ship USS Kearsarge (LHD 3) before flight operations to send medical personal embarked aboard Kearsarge begin.jpg  | U.S. Navy photo by Mass Communication Specialist | Public domain | https://commons.wikimedia.org/wiki/File:US_Navy_080818-N-4515N-001_An_air_crew_member_stands_on_the_flight_deck_of_the_amphibious_assault_ship_USS_Kearsarge_(LHD_3)_before_flight_operations_to_send_medical_personal_embarked_aboard_Kearsarge_begin.jpg
+fsofpso.jpg  <-  File:Iwafune-oki oil platform in Japan.jpg  | tsuda | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Iwafune-oki_oil_platform_in_Japan.jpg
+
+chartering.jpg (re-pick, distinct from procurement)  <-  File:Eimskip container terminal at Port of Reykjavík.jpg | Quintin Soloviev | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Eimskip_container_terminal_at_Port_of_Reykjav%C3%ADk.jpg
+
+hero-home-tanker.jpg (home split hero, tanker)  <-  File:Supertanker AbQaiq.jpg |  | Public domain | https://commons.wikimedia.org/wiki/File:Supertanker_AbQaiq.jpg
+
+hero-home-tanker.jpg (home split hero, tanker) <- user-provided image 2026-06-04
+
+technical.jpg (Technical section) <- user-provided image 2026-06-04

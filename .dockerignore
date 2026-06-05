@@ -1,0 +1,9 @@
+node_modules
+.next
+.run
+data
+.git
+*.log
+npm-debug.log*
+.DS_Store
+.claude-images
