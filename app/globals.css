@@ -132,6 +132,13 @@
   height: auto;
 }
 
+.services-page .service-desc,
+.services-page .service-desc p,
+.services-page .service-desc li {
+  text-align: left !important;
+  word-spacing: normal;
+}
+
 /* ── Scroll reveal ──────────────────────────────────────────────────────────
    The original (GSAP) hides content below the fold and animates it in on scroll
    with expo easing + word/element stagger. The original site CSS already gives

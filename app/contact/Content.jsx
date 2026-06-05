@@ -9,6 +9,10 @@ export default function Contact() {
   const c = C.contact;
   const [active, setActive] = useState('sg');
   const office = c.offices.find((o) => o.key === active);
+  const mapHelp = {
+    en: 'If the embedded map is slow to load on your network, use the map links below.',
+    zh: '如果当前网络下嵌入地图加载较慢，可使用下方地图链接打开。',
+  };
 
   return (
     <div className="content-wrapper">
@@ -51,8 +55,24 @@ export default function Contact() {
                         </li>
                       </ul>
                       <div className="ratio ratio-24x17 w-480 img-fluid mx-auto mt-5">
-                        <iframe key={office.key + lang} src={`${office.map}&hl=${lang === 'zh' ? 'zh-CN' : 'en'}`} width="600" height="450" style={{ border: 0 }}
+                        <iframe key={office.key + lang} src={office.map.embed} width="600" height="450" style={{ border: 0 }}
                           allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title={office.place.en}></iframe>
+                      </div>
+                      <p className="small text-dove mt-3">{mapHelp[lang]}</p>
+                      <div className="d-flex flex-wrap justify-content-md-start justify-content-center gap-3 mt-3">
+                        <a href={office.map.link} target="_blank" rel="noreferrer" className="btn btn-outline-primary">
+                          {lang === 'zh' ? '打开 OpenStreetMap' : 'Open in OpenStreetMap'}
+                        </a>
+                        {office.map.google && (
+                          <a href={office.map.google} target="_blank" rel="noreferrer" className="btn btn-outline-primary">
+                            {lang === 'zh' ? '打开 Google 地图' : 'Open in Google Maps'}
+                          </a>
+                        )}
+                        {office.map.amap && (
+                          <a href={office.map.amap} target="_blank" rel="noreferrer" className="btn btn-outline-primary">
+                            {lang === 'zh' ? '打开高德地图' : 'Open in Amap'}
+                          </a>
+                        )}
                       </div>
                     </div>
                   </div>

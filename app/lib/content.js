@@ -200,8 +200,30 @@ export const C = {
   contact: {
     title: { en: ['Contact', 'us'], zh: ['联系', '我们'] },
     offices: [
-      { key: 'sg', tab: { en: 'TOP MARINE GROUP (Singapore)', zh: 'TOP MARINE GROUP(新加坡)' }, title: { en: 'TOP MARINE GROUP PTE. LTD.', zh: 'TOP MARINE GROUP PTE. LTD.' }, place: { en: 'Singapore', zh: '新加坡' }, address: { en: '163 Tras Street, #09-02, Lian Huat Building, Singapore 079024', zh: '新加坡 163 Tras Street, #09-02, Lian Huat Building, 079024' }, map: 'https://maps.google.com/maps?q=163%20Tras%20Street%20%2309-02%20Lian%20Huat%20Building%20Singapore%20079024&output=embed' },
-      { key: 'sh', tab: { en: 'TOP MARINE GROUP (Shanghai)', zh: 'TOP MARINE GROUP(上海)' }, title: { en: 'TOP MARINE GROUP', zh: 'TOP MARINE GROUP' }, place: { en: 'Shanghai, China', zh: '中国 · 上海' }, address: { en: 'No. 7, Lane 855, West Huanhu 1st Road, Lingang New Area, China (Shanghai) Pilot Free Trade Zone, Shanghai', zh: '中国(上海)自由贸易试验区临港新片区环湖西一路 855 弄 7 号' }, map: 'https://maps.google.com/maps?q=Lane%20855%20West%20Huanhu%201st%20Road%20Lingang%20New%20Area%20Shanghai&output=embed' },
+      {
+        key: 'sg',
+        tab: { en: 'TOP MARINE GROUP (Singapore)', zh: 'TOP MARINE GROUP(新加坡)' },
+        title: { en: 'TOP MARINE GROUP PTE. LTD.', zh: 'TOP MARINE GROUP PTE. LTD.' },
+        place: { en: 'Singapore', zh: '新加坡' },
+        address: { en: '163 Tras Street, #09-02, Lian Huat Building, Singapore 079024', zh: '新加坡 163 Tras Street, #09-02, Lian Huat Building, 079024' },
+        map: {
+          embed: 'https://www.openstreetmap.org/export/embed.html?bbox=103.8408%2C1.2732%2C103.8473%2C1.2765&layer=mapnik&marker=1.27487%2C103.84404',
+          link: 'https://www.openstreetmap.org/?mlat=1.27487&mlon=103.84404#map=18/1.27487/103.84404',
+          google: 'https://www.google.com/maps/search/?api=1&query=163%20Tras%20Street%20%2309-02%20Lian%20Huat%20Building%20Singapore%20079024',
+        },
+      },
+      {
+        key: 'sh',
+        tab: { en: 'TOP MARINE GROUP (Shanghai)', zh: 'TOP MARINE GROUP(上海)' },
+        title: { en: 'TOP MARINE GROUP', zh: 'TOP MARINE GROUP' },
+        place: { en: 'Shanghai, China', zh: '中国 · 上海' },
+        address: { en: 'No. 7, Lane 855, West Huanhu 1st Road, Lingang New Area, China (Shanghai) Pilot Free Trade Zone, Shanghai', zh: '中国(上海)自由贸易试验区临港新片区环湖西一路 855 弄 7 号' },
+        map: {
+          embed: 'https://www.openstreetmap.org/export/embed.html?bbox=121.9225%2C30.8940%2C121.9335%2C30.9015&layer=mapnik&marker=30.89760%2C121.92860',
+          link: 'https://www.openstreetmap.org/?mlat=30.89760&mlon=121.92860#map=17/30.89760/121.92860',
+          amap: 'https://uri.amap.com/search?keyword=%E4%B8%AD%E5%9B%BD%EF%BC%88%E4%B8%8A%E6%B5%B7%EF%BC%89%E8%87%AA%E7%94%B1%E8%B4%B8%E6%98%93%E8%AF%95%E9%AA%8C%E5%8C%BA%E4%B8%B4%E6%B8%AF%E6%96%B0%E7%89%87%E5%8C%BA%E7%8E%AF%E6%B9%96%E8%A5%BF%E4%B8%80%E8%B7%AF855%E5%BC%847%E5%8F%B7&src=top-marinegroup',
+        },
+      },
     ],
     email: 'admin@top-marine.cn',
   },

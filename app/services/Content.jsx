@@ -6,7 +6,7 @@ import { useLang } from '../components/LangProvider';
 export default function Services() {
   const { lang } = useLang();
   return (
-    <div className="content-wrapper">
+    <div className="content-wrapper services-page">
       <div className="container-fluid mt-xxl-15 mt-xl-4 mt-lg-8 mt-sm-5 mb-sm-20 mb-15">
         <div className="row justify-content-center">
           <div className="col-xxl-13 col-xl-15 col-lg-16 col-md-15 col-16">
